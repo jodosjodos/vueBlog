@@ -5,7 +5,8 @@ const getPost = (id) => {
   const error = ref(null);
   const load = async () => {
     try {
-      const data = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+const data = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+
       if (!data.ok) {
         throw Error(" post not found or there is error");
       }
